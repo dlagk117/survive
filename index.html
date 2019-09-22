@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>재난에서 살아남기 </title>
+	<style type="text/css">
+		html { 
+ 	 background: url(https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2528623D56F3E62408) no-repeat center center fixed; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+ 	 background-size: cover;
+	}
+		body{padding: 0; margin: 0; }
+		.subject{position: absolute; width: 300px; display: block;}
+		.giif{ display: block; position: absolute;  opacity: 0; height: 300px;}
+		@font-face { font-family: 'SunBatang-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/SunBatang-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+		div{font-family: 'SunBatang-Bold';}
+		footer{background: black;  font-family: 'SunBatang-Bold' margin-top: 220px; margin-bottom: 40px; color: white; text-align: center;padding: 15;}		
+	</style>
+</head>
+<body>
+	<audio id="firesound">
+		 <source src="firefire.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="yellsound">
+		 <source src="yell.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="ttattattasound">
+		 <source src="따따따음성.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="catsound">
+		 <source src="애옹음성.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="snacksound">
+		 <source src="snack.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="rainsound">
+		 <source src="rain.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="crashsound">
+		 <source src="crash.mp3" type="audio/mpeg">
+	</audio>	
+	<audio id="tapesound">
+		 <source src="tape.mp3" type="audio/mpeg">
+	</audio>			
+	<audio id="horrorsound">
+		 <source src="horror.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="sirensound">
+		 <source src="siren.mp3" type="audio/mpeg">
+	</audio>
+	<audio id="climbsound">
+		 <source src="climb.mp3" type="audio/mpeg">
+	</audio>	
+	<audio id="drinksound">
+		 <source src="drinking.mp3" type="audio/mpeg">
+	</audio>	
+	<audio id="jumpsound">
+		 <source src="jump.mp3" type="audio/mpeg">
+	</audio>	
+	<img src="survive.png" style="position: absolute; left: 600px; top: 150px;">
+
+
+
+	<div style="left: 300px; top: 450px; position: absolute;">	
+	<img src="fire.png"  class="subject" style="left: 100px; top: 10px;" id="before4">
+	<img src="light.png" class="subject" style="width: 200px; left: 0px; top: 500px;" id="before5" >
+	<img src="kit.png" class="subject" style="width: 250px; left: 560px; top:0px;" id="before1">
+	<img src="energy.png" class="subject" style="left: 0px; top: 300px;" id="before3">
+	<img src="cat.png" class="subject" style="left: 700px; top: 20px;" id="before2">
+	<img src="hammer.png" class="subject" style="width: 210px; left: 770px; top: 340px;" id="before9">
+	<img src="water.png" class="subject" style="width: 130px; left: 680px; top: 550px;" id="before10">
+	<img src="raincoat.png" class="subject" style="width: 500px; left: 200px; top: 180px;" id="before8">
+	<img src="mask.png" class="subject" style="left: 310px;" id="before13">	
+	<img src="rope.png" class="subject" style="width: 130px; left: 30px; top: 50px;" id="before11">
+	<img src="phone.png" class="subject" style="width: 200px; left: 620px;top: 300px;" id="before6">
+	<img src="shoes.png" class="subject" style="left: 30px;top: 620px;" id="before7">	
+	<img src="jusa.png" class="subject" style="width: 120px; left: 580px; top: 230px; " id="before12">	
+	</div>
+
+
+	<div style="position: absolute; top: 70px; left: 250px; ">
+		<img src="cpr.gif" class="giif" id="after1" style="left: 320px;">
+		<img src="cat.gif" class="giif" id="after2" style="left: 280px;">
+		<img src="eat.gif" class="giif" id="after3" style="left: 290px;">
+		<img src="fire.gif" class="giif" id="after4" style="left: 260px;">
+		<img src="flash.gif" class="giif" id="after5" style="left: 200px;">
+		<img src="따따따.gif" class="giif" id="after6" style="left: 270px;">
+		<img src="등산.gif" class="giif" id="after7" style="left: 300px;">
+		<img src="giphy.gif" class="giif" id="after8" style="left: 320px;">
+		<img src="hammer.gif" class="giif" id="after9" style="left: 350px;">
+		<img src="drink.gif" class="giif" id="after10" style="left: 300px;">
+		<img src="rope.gif" class="giif" id="after11" style="left: 290px;">
+		<img src="wntkrl.gif" class="giif" id="after12" style="left: 340px;">
+		<img src="exit.gif" class="giif" id="after13" style="left: 350px;">
+
+	</div>
+<div style="top: 1600px; position: absolute;">
+	<footer> Copyright 2019, Digital Publishing. Lee Imha. </footer>	
+</div>
+	<script type="text/javascript">	
+		 var A = 1
+			before13.onclick = function(){
+			A = A+1
+			if(A%2==0){
+				after13.style.opacity= "1";
+				jumpsound.play();
+				jumpsound.volume= 1.0;	
+
+			}else{after13.style.opacity= "0";
+				jumpsound.volume= 0.0;			}
+			
+			}
+
+		 var B = 1
+			before2.onclick = function(){
+			B = B+1
+			if(B%2==0){
+				after2.style.opacity= "1";
+				catsound.play();
+				catsound.volume= 1.0;				
+			}else{after2.style.opacity= "0";
+				catsound.volume= 0.0;}
+				
+			}
+
+		 var c = 1
+			before1.onclick = function(){
+			c = c+1
+			if(c%2==0){
+				after1.style.opacity= "1";
+				sirensound.play();
+				sirensound.volume= 1.0;
+
+			}else{after1.style.opacity= "0";
+				sirensound.volume= 0.0;}
+			
+			}
+
+		 var D = 1
+			before3.onclick = function(){
+			D = D+1
+			if(D%2==0){
+				after3.style.opacity= "1";
+				snacksound.play();
+				snacksound.volume= 1.0;				
+			}else{after3.style.opacity= "0";
+				snacksound.volume= 0.0;}
+			
+			}
+
+		 var E = 1
+			before4.onclick = function(){
+			E = E+1
+			if(E%2==0){
+				after4.style.opacity= "1";
+				firesound.play();
+				firesound.volume= 1.0;
+			}else{after4.style.opacity= "0";
+			firesound.volume= 0.0;}
+			
+			}
+
+		 var F = 1
+			before5.onclick = function(){
+			F = F+1
+			if(F%2==0){
+				after5.style.opacity= "1";
+				horrorsound.play();
+				horrorsound.volume= 1.0;
+				
+			}else{after5.style.opacity= "0";
+				horrorsound.volume=0.0;}
+			
+			}
+
+		 var G = 1
+			before6.onclick = function(){
+			G = G+1
+			if(G%2==0){
+				after6.style.opacity= "1";
+				ttattattasound.play();
+				ttattattasound.volume= 1.0;					
+			}else{after6.style.opacity= "0";
+		
+				ttattattasound.volume= 0.0;			}
+			
+			}
+
+		 var H = 1
+			before7.onclick = function(){
+			H = H+1
+			if(H%2==0){
+				after7.style.opacity= "1";
+				climbsound.play();
+				climbsound.volume= 1.0;	
+
+			}else{after7.style.opacity= "0";
+				climbsound.volume=0.0;	
+		}
+			
+			}
+
+		 var I = 1
+			before8.onclick = function(){
+			I = I+1
+			if(I%2==0){
+				after8.style.opacity= "1";
+								rainsound.play();
+				rainsound.volume= 1.0;
+			}else{after8.style.opacity= "0";
+						
+				rainsound.volume= 0.0;}
+			
+			}
+
+		 var J = 1
+			before9.onclick = function(){
+			J = J+1
+			if(J%2==0){
+				after9.style.opacity= "1";
+				crashsound.play();
+				crashsound.volume= 1.0;
+			}else{after9.style.opacity= "0";
+				crashsound.volume= 0.0;}
+			
+			}
+
+		 var K = 1
+			before10.onclick = function(){
+			K = K+1
+			if(K%2==0){
+				after10.style.opacity= "1";
+				drinksound.play();
+				drinksound.volume= 1.0;	
+
+			}else{after10.style.opacity= "0";
+				drinksound.volume= 0.0;	}
+			
+			}
+		 var L = 1
+			before11.onclick = function(){
+			L = L+1
+			if(L%2==0){
+				after11.style.opacity= "1";
+				tapesound.play();
+				tapesound.volume= 1.0;
+
+			}else{after11.style.opacity= "0";
+					tapesound.volume= 0.0;}
+			
+			}
+
+		 var M = 1
+			before12.onclick = function(){
+			M = M+1
+			if(M%2==0){
+				after12.style.opacity= "1";
+								yellsound.play();
+				yellsound.volume= 1.0;
+			}else{after12.style.opacity= "0";
+				yellsound.volume= 0.0;}
+			
+			}
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
